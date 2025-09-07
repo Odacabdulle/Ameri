@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="flex justify-evenly items-center">
+        <div class="logo">
+            <img class="w-[180px]" src="image/logo-01.png" alt="">
+        </div>
+        <ul class="hidden sm:flex gap-10 text-xl">
+            <li class="text-[#00aeef] cursor-pointer">Home</li>
+            <li class="hover:text-[#00aeef] cursor-pointer">About</li>
+            <li class="hover:text-[#00aeef] cursor-pointer">Service</li>
+            <li class="hover:text-[#00aeef] cursor-pointer">Product</li>
+            <li class="hover:text-[#00aeef] cursor-pointer">Gallery</li>
+            <li class="hover:text-[#00aeef] cursor-pointer">Contact us</li>
+        </ul>
+        <div class=" hidden sm:block">
+            <span class="text-[#ec008c] text-xl"> <i class="fa-solid fa-bag-shopping"></i></span>
+            <span class="text-[#ec008c] text-xl"><i class="fa-solid fa-shirt"></i></span>
+        </div>
+        <div class=" hidden sm:block">
+            <button class="py-1 px-6 bg-[#00aeef] text-white hover:bg-[#ec008c]">SignIn</button>
+            <button class="py-1 px-6 bg-[#ec008c] text-white hover:bg-[#00aeef]">Sign Up</button>
+        </div>
+        <span class=" text-2xl block sm:hidden"><i class="fa-solid fa-bars"></i></span>
+    </div>
+    <!-- hero -->
+    <div class="flex flex-col justify-evenly items-center sm:flex-row">
+        <div class="w-[360px] sm:w-[500px]">
+            <h1 class="text-2xl mb-4 text-[#00aeef] sm:text-6xl">Amiira clothes </h1>
+            <p class="text-xl mb-3">waxan halkan kahelikartaa dharka
+                <br> nucyadiisa kala ah dharka dumarka
+                ito dharka raga waxan kalo kamarneen <br>
+                sacadaha raga iyo kabaha raga
+                waxan kalo kahelikartaa dhaman intii lamis ah oo aad rabto
+                dhaman waxan nigu diyar ah Amiira clothes
+            </p>
+            <button class="py-1 px-6 bg-[#ec008c] text-white hover:bg-[#00aeef]">Shop Now</button>
+        </div>
+        <div class="flex flex-col sm:flex-row"> 
+            <img class="w-[300px] h-{300px}" src="image/women.png" alt="">
+            <img class="w-[300px]  h-{300px}" src="image/man.png" alt="">
+        </div>
+    </div>
+    <!-- about -->
+    <div class="sm:flex-row  flex flex-col items-center justify-around">
+        <div>
+            <img class="w-[500px]" src="image/About.png" alt="">
+        </div>
+        <div class="w-[360px] sm:w-[500px]">
+            <h1 class="text-6xl mb-4 text-[#ec008c]">About US</h1>
+            <p>Dharka waa kuwo tayadowda aad usareyso waxan kuheleysa qimaha ugu macquulsan <br>
+                oo qof wax kugadan karo waxan kuheleysaa 1saac yar waxan hubaalna ah in aad kuwada
+                qancidonto dhamaan adegyada aan bixin <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et sunt consequuntur aliquam autem similique
+                placeat facilis iusto necessitatibus alias? Accusantium!
+            </p>
+            <button class="py-1 px-6 bg-[#00aeef] text-white hover:bg-[#00aeef] mt-3">Read More</button>
+        </div>
+    </div>
+    <!-- service -->
+
+    <div class="text-cente">
+        <h1 class="text-center text-4xl mt-10 text-[#00aeef]">Service</h1>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-self-center mt-10">
+        <div class="w-[300px] h-[200px] shadow-2xl p-10 text-center">
+            <span class="text-[#00aeef]  text-2xl"><i class="fa-solid fa-truck"></i></span>
+            <h2>
+                <span class="text-[#ec008c] text-xl ">Delivery</span>
+            </h2>
+            <p>waxan goobta lagu keni dona wax walbo
+                aad dalbato</p>
+        </div>
+        <div class="w-[300px] h-[200px] shadow-2xl p-10 text-center">
+            <span class="text-[#00aeef]  text-2xl"><i class="fa-solid fa-alarm-clock"></i></span>
+            <h2>
+                <span class="text-[#ec008c] text-xl ">Time</span>
+            </h2>
+            <p>24/7 waan shaqeneynaa</p>
+        </div>
+        <div class="w-[300px] h-[200px] shadow-2xl p-10 text-center">
+            <span class="text-[#00aeef]  text-2xl"><i class="fa-solid fa-bell"></i></span>
+            <h2>
+                <span class="text-[#ec008c] text-xl ">Ball</span>
+            </h2>
+            <p>24/7 open welcome</p>
+        </div>
+    </div>
+    <!-- Product -->
+    <div class="text-cente">
+        <h1 class="text-center text-4xl mt-10 text-[#00aeef]">Product Man</h1>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-4 justify-self-center">
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[200px] h-[230px]" src="image/product1.jpg" alt="">
+            <h1>Jaakad & shati</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$10</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product2.jpg" alt="">
+            <h1>Jaakad</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$8</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product3.jpg" alt="">
+            <h1>Shaati</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$13</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl items-center">
+            <img class="w-[300px] h-[230px]" src="image/product4.jpg" alt="">
+            <h1>Shaati iyo Surwaal</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$20</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product6.jpg" alt="">
+            <h1>Shaati iyo Buumo</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$17</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product7.jpg" alt="">
+            <h1>Shaati iyo Buumo</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$17</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product8jpg.jpg" alt="">
+            <h1>Surwaal</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$7</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/qamiis.jpg" alt="">
+            <h1>Qamiis</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$18</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/qamiis2.jpg" alt="">
+            <h1>Qamiis</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$20</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/qamiis4.jpg" alt="">
+            <h1>Qamiis</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$25</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/qamiis5.jpg" alt="">
+            <h1>Qamiis</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$23</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/qamiis6.jpg" alt="">
+            <h1>Qamiis</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$26</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/surwaal.jpg" alt="">
+            <h1>Surwaal</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$20</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/surwaal2.jpg" alt="">
+            <h1>Surwaal</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$10</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/surwaal3.jpg" alt="">
+            <h1>Surwaal</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$15</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/shaati.jpg" alt="">
+            <h1>Surwaal</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$13</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/shaati1.jpg" alt="">
+            <h1>Surwaal</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$14</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/suun.jpg" alt="">
+            <h1>Suun</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$19</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/shoesproduct1.jpg" alt="">
+            <h1>SHoes</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$19</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/shoesproduct2.jpg" alt="">
+            <h1>SHoes</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$15</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- produtt women -->
+
+    <div class="text-cente">
+        <h1 class="text-center text-4xl mt-10 text-[#00aeef]">Product women</h1>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-4 justify-self-center">
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product-women.jpg" alt="">
+            <h1>Jaakad</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$11</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product-women2.jpg" alt="">
+            <h1>Jaakad</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$8</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product-women4.jpg" alt="">
+            <h1>Shaati</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$13</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product-women5.jpg" alt="">
+            <h1>Shaati iyo Surwaal</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$20</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product-women6.jpg" alt="">
+            <h1>Shaati iyo canbuur borso kabo</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$17</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product-women7.jpg" alt="">
+            <h1>Full colthes</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$30</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product-womne3.jpg" alt="">
+            <h1>SHaati</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$7</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/product-womne4.jpg" alt="">
+            <h1>isku </h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$18</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/abayad.1jpg.jpg" alt="">
+            <h1>Abayad</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$10</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/abayad.2jpg.jpg" alt="">
+            <h1>Abayad</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$15</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/abayad.3jpg.jpg" alt="">
+            <h1>Aroos</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$23</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/shoes-women1.jpg" alt="">
+            <h1>Shoes</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$6</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/shoes-women2.jpg" alt="">
+            <h1>Shoes</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$12</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/shoes-women3.jpg" alt="">
+            <h1>Shoes</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$14</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/shoes-women4.jpg" alt="">
+            <h1>shoes</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$5</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/watch-women1.jpg" alt="">
+            <h1>watch</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$13</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/watch-women2.jpg" alt="">
+            <h1>watch</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$14</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/watch-women3.jpg" alt="">
+            <h1>Suun</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$19</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl">
+            <img class="w-[300px] h-[230px]" src="image/borso-women1.jpg" alt="">
+            <h1>SHoes</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$10</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] p-7 shadow-xl justify-center">
+            <img class="w-[300px] h-[230px]" src="image/borso-women2.jpg" alt="">
+            <h1>SHoes</h1>
+            <p>qimaheyda waa </p>
+            <div class="flex gap-7 justify-between mt-5">
+                <p>$15</p>
+                <button class="bg-[#00aeef] text-white py-1 px-2 hover:bg-[#ec008c]">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- gallery -->
+    <div class="text-cente">
+        <h1 class="text-center text-4xl mt-10 text-[#00aeef]">Gallery</h1>
+    </div>
+    <div>
+        <div class="grid grid-cols-1 sm:grid-cols-6 justify-self-center gap-3 mt-4">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/shoes-women5.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/shoes-women6.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/watch1.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/watch2.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/watch3jpg.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/watch10.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/barafun.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/bors1.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/bors2.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/borso-women3.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/suune.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/dumar.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/dumar1.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/dhago.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/koofi.jpg" alt="">
+            <img class= "w-[300px] h-[250px] sm:w-[200px]" src="image/xirig.jpg" alt="">
+            <img class="w-[300px] h-[250px] sm:w-[200px]" src="image/laptop[.jpg" alt="">
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="bg-[#092c96] text-white mt-3 h-[600px] sm:h-[200px] py-1 ">
+        <div class="flex flex-col sm:flex-row  justify-evenly ">
+            <div class="logo-1">
+                <img class="w-[100px]" src="image/logo-01.png" alt="">
+                <p class="w-[300px] mt-[-20px]">Labiska waa qimaha qofka waxan ku labisidonaa <br>
+                    oo kusino dhar isku sobaxayo iyo kuwo kuso sarayo oo midabkaga neh nurinayo</p>
+            </div>
+            <ul class="gap-10 text-xl">
+                <li class="text-[#00aeef] cursor-pointer">Home</li>
+                <li class="hover:text-[#00aeef] cursor-pointer">About</li>
+                <li class="hover:text-[#00aeef] cursor-pointer">Service</li>
+                <li class="hover:text-[#00aeef] cursor-pointer">Product</li>
+                <li class="hover:text-[#00aeef] cursor-pointer">Gallery</li>
+                <li class="hover:text-[#00aeef] cursor-pointer">Contact us</li>
+            </ul>
+            <div>
+                <h1 class="mb-1">Contact</h1>
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>612001535</span>
+                <br>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Putlaan-somalia</span>
+                <br>
+                <i class="fa-solid fa-envelope"></i>
+                <span>Putland-somaali@gmail.com</span>
+            </div>
+            <ul class="mb-1">
+                <h1>Policy</h1>
+                <li>Terms</li>
+                <li>Payment</li>
+            </ul>
+
+            <div class="mb-1">
+                <h1>Social Media</h1>
+                <i class="fa-brands fa-facebook"></i>
+                <span>facebook</span>
+                <br>
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+                <br>
+                <i class="fa-brands fa-tiktok"></i>
+                <span>Tiktok</span>
+            </div>
+        </div>
+        <div class="text-center text-[#ff18ff] mt-1">
+            <p>© 2025 All Rights Reserved by Cabdiwahab</p>
+        </div>
+    </div>
+</body>
+
+</html>
